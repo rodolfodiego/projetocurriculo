@@ -1,0 +1,265 @@
+/*Padrão para as páginas*/
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;cursor: pointer;color: inherit;}
+ul,nav{	list-style: none;}
+hr{height: 2px;background-color: #191c03;border: none;}
+.todo{
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+	background: gainsboro;
+}
+.todo > *{
+	padding: 10px;
+	margin: 10px;
+	flex: 1 100%;
+	border-radius: 10px;
+}
+.header{
+	background: slateblue;
+	height: 120px;
+	margin: auto;
+}
+header h2{text-transform: uppercase;}
+header{
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 35px 100px 0;
+}
+header nav{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+header nav li{margin: 0 15px;}
+header nav li:first-child{margin-left: 0;}
+header nav li:last-child{margin-right: 0;}
+
+@media(max-width: 600px){
+	header{flex-direction: column;}
+	header h2{margin-bottom: 15px;}
+}
+.footer{
+	background: slateblue;
+	height: 130px;
+}
+
+.footer-area{
+	display: flex;
+	justify-content: space-around;
+	color: #FFF;
+	font-size: 20px;
+	flex-wrap: wrap;
+}
+
+.footer-area li i{
+	font-size: 30px;
+}
+.siga-me div{
+	display: flex;
+	justify-content: space-between;
+
+}
+@media(max-width: 700px){
+	.footer{height: 400px; margin: auto;}
+	.footer-area li{margin: 30px;}
+}
+
+/*Styles pg. INDEX*/
+.aside{
+	border-radius: 200px;
+	text-transform: uppercase;
+	font-size: .8rem;
+	height: 100px;
+	padding:  30px;
+	text-align: center;
+}
+.img-perfil{ height: 240px; padding: 150px; margin:10px;}
+.curriculo{background: deepskyblue; margin: 10px;}
+.trabalhos{background: hotpink;margin: 10px;}
+.talentos{background: aquamarine;margin: 10px;}
+.inter1{
+	display: flex;
+	align-items: center;
+}
+.inter2-1{
+	display: flex;
+	margin: 50px;
+	justify-content: space-around;
+}
+.inter{
+	margin: auto;
+	text-align: left;
+	height: 350px;
+	font-size: 24px;
+}
+.inter1 p{
+	background: skyblue;
+	height: auto;
+	border-radius: 60px;
+	padding:30px;
+	margin: auto;
+}
+@media all and (min-width: 800px){	
+	.inter{flex: 1;}	
+}
+@media(max-width: 700px){
+	.inter1{flex-direction: column; height: 650px; margin-bottom: 10px; padding: 10px;}
+	.inter2-1{flex-direction: column; margin-top: 10px;}
+	.inter2{ height: 300px; align-items: center;}
+	.aside{height: 50px;}
+}
+
+/*Estilo pg. CURRICULO*/
+.curri h1{font-size: 3rem;margin-bottom: 10px;text-transform: uppercase;}
+.curri{margin:20px 200px;}
+.secao{
+	background: deepskyblue;
+	height: 130px;
+	border-radius: 50px;
+	padding: 40px;
+	margin: 0px 30px 30px 30px;
+}
+.img-exp-profi{
+	width: 150px;
+	height: 130px;
+	border-radius: 50px;
+	padding: 40px;
+	margin: auto;
+}
+.curri p{
+	background: skyblue;
+	padding: 50px;
+	border-radius: 100px;
+	justify-content: center;
+}
+.section-curri{
+	display: flex;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+.section-curri h3{margin: 10px;}
+.div-talento{
+	border-radius: 10px; 
+	height: auto; 
+	margin-left: 100px;
+}
+.div-talento aside i{
+	font-size: 30px;
+	margin: 5px;
+}
+@media(max-width: 800px){
+	.curri{margin: auto;}
+}
+@media(max-width: 700px){
+	.section-curri{flex-direction: column;}
+	.curri h1{font-size: 3rem;}
+	.secao{background: deepskyblue; height: 50px;border-radius: 50px;padding: 10px;margin: 10px;}
+	.div-talento{margin: auto; margin-top: 10px;}
+	.img-exp-profi{height: 140px;border-radius: 50px;padding: 10px;margin: 10px;}
+}
+
+/*Estilo pg. PROJETOS*/
+
+.projetos h1{ font-size: 3rem; margin-bottom: 10px; text-transform: uppercase;}
+.projetos{margin:20px 200px;}
+.projeto{display: flex;margin: 40px;}
+.dec-projeto div p{	margin: 10px;}
+.img-projeto{ 
+	height: 200px;
+	padding: 135px;
+	border-radius: 130px;
+}
+.dec-projeto hr{
+	width: 400px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+}
+.dec-projeto aside{
+	width: 110px;
+	height: 110px;
+	font-size: 25px;
+	border-radius: 100px;
+	background: lightgreen;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	margin-bottom: 10px;
+}
+.rodape-proj{
+	margin: 20px;
+	display: flex;
+	align-items: center;
+}
+.rodape-proj a{
+	margin: 10px 10px 10px 10px;
+	padding: 15px;
+	background: deepskyblue;
+	height: 40px;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+@media(max-width: 1100px){
+	.projetos{margin: auto;}
+	.projetos hr{width: auto;}
+}
+@media(max-width: 700px){
+	.projetos{margin: auto;}
+	.projeto{flex-direction: column; margin:auto;}
+	.projetos h1{ font-size: 2.5rem; margin-bottom: 10px;}
+	.projetos hr{width: 250px;margin:auto; margin-bottom: 10px;}
+	.img-projeto{height: 200px; width: 100px; padding: 135px; border-radius: 130px; margin: auto;}
+	.rodape-proj{margin: 20px;flex-direction: column;}
+}
+
+/*Estilo pg. CONTATO*/
+
+.div-contato h1{ font-size: 4rem; text-transform: uppercase; margin-bottom: 10px;}
+.contato{margin:auto;}
+.div-form{width: 360px;}
+.contato div{display: flex; }
+.redes-sociais p{margin-right: 10px;}
+.container{justify-content: space-around; align-items: center;}
+.div-contato{
+	flex-direction: column;	
+	list-style: none;
+	margin-right: 20px;
+}
+ .div-contato li i{
+	font-size: 30px;
+	margin: 5px;
+}
+ .redes-sociais{justify-content: center;}
+ .entradas{
+ 	height: 30px;
+ 	width: 100%;
+ }
+ .formulario textarea{
+ 	height: 80px;
+ 	width: 300px;
+ }
+ .formulario h3{margin-bottom: 10px;}
+ 
+ @media(max-width: 800px){
+	.contato{margin: 0px; padding: 0;}
+	.contato div{flex-direction: column; margin-bottom: 10px;}
+	.formulario textarea{width: 300px;}
+	.entradas{height: 30px; width: 300px;}
+	.contato div h1{ font-size: 2rem; text-transform: uppercase;}
+	.redes-sociais{display: none;}
+}
